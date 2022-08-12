@@ -1,0 +1,115 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+body{
+    color: #fff;
+}
+.container {
+    max-width: 100%;
+    height: 100vh;
+    display: flex;
+}
+/* Profitize */
+.container .profitize {
+    width: 15%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 50px;
+    background-color: rgba(0, 0, 0, 0.904);
+}
+.profitize .sectionCustomer , .setingSupport {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-top: 70px;
+}
+
+.profitize a {
+    margin-top: 20px;
+    text-decoration: none;
+    color: #fff;
+}
+/* Overview */
+.container .owerview {
+    width: 35%;
+    height: 100%;
+    padding: 30px 50px;
+    color: rgba(0, 0, 0, 0.685);
+    background-color: rgba(204, 204, 204, 0.411);
+}
+.owerview h2 {
+    margin-top: 50px;
+}
+.owerview table  {
+    width: 100%;
+    height: 300px;
+    margin-top: 40px;
+}
+.owerview table tr {
+    display: flex;
+    justify-content: space-between;
+}
+.owerview .border_bottem {
+    padding-bottom: 5px;
+    border-bottom: solid 1px;
+}
+.owerview table tr  td {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+}
+/* Section Prancip */
+.container .sectionPrancip {
+    width: 60%;
+    height: 100%;
+    padding: 0 25px;
+    display: flex;
+    flex-direction: column;
+    color: rgba(0, 0, 0, 0.685);
+}
+.sectionPrancip input {
+    background-color: rgba(128, 128, 128, 0.356);
+    border:  none;
+    outline: none;
+    padding-left: 20px;
+    border-radius: 2px;
+}
+.sectionPrancip input[type='date']{
+    height: 20px;
+}
+.sectionPrancip .section_search-profile {
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.section_search-profile div {
+    width: 50%;
+}
+.section_search-profile .profile {
+    display: flex;
+    justify-content: flex-end;
+}
+.section_search-profile  input {
+    width: 200px;
+    height: 30px;
+}
+
+.Date_Title-yers {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+/* customer */
+.customer {
+    width: 100%;
+}
+.customer .Recent-hour {
+    display: flex;
+    justify-content: space-between;
+}
