@@ -71,10 +71,7 @@
                 </table>
             </div>
             <div class="owerview_section_2">
-                <div id="chartContainer" style="height: 350px; width: 100%;"></div>
-                <button class="btn invisible" id="backButton"> Back</button>
-                <script src="https://canvasjs.com/assets/script/jquery-1.11.1.min.js"></script>
-                <script src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
+                <div id="chartContainer" style="height: 350px; width: 100%; " ></div>
             </div>
         </div>
         <!-- Prancip -->
@@ -96,11 +93,8 @@
                     <h1>This Year Growth</h1>
                     <input type="date">
                 </div>
-                                
-                <div id="chartContainer2" style="height: 370px; width: 100%;"></div>
-                    <script src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
-                    <div style="margin-top:16px;color:dimgrey;font-size:9px;font-family: Verdana, Arial, Helvetica, sans-serif;text-decoration:none;">Source: <a href="https://canvasjs.com/javascript-charts/multiple-axis-column-chart/" target="_blank" title="JavaScript Column Charts with Multiple Axes ">
-                        https://canvasjs.com/javascript-charts/multiple-axis-column-chart/</a>
+                <div class="chart2">
+                    <div id="chartContainer2" style="height: 370px; width: 100%;"></div>
                 </div>
                 
             </div>
@@ -120,21 +114,21 @@
                         </tr>
                         <tr>
                             <td>Jenny Wlison</td>
-                            <td>New Customer</td>
+                            <td> <input disabled type="checkbox"> New Customer</td>
                             <td>#0038160</td>
                             <td>1 min ago</td>
                             <td>$123.40</td>
                         </tr>
                         <tr>
                             <td>Guy Hawkins</td>
-                            <td>Signed up</td>
+                            <td> <input disabled type="checkbox"> Signed up</td>
                             <td>#0038159</td>
                             <td>5 min ago</td>
                             <td>$79.99</td>
                         </tr>
                         <tr>
                             <td>Ralph Edwards</td>
-                            <td>New Customer</td>
+                            <td><input disabled  type="checkbox"> New Customer</td>
                             <td>#0038158</td>
                             <td>24 min ago</td>
                             <td>$217.30</td>
@@ -147,8 +141,8 @@
       
 
     <!-- link script Graph -->
-    <script src="../chart_2.js"></script>
     <script src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
+    <!-- javascript base -->
     <script src="../index.js"></script>
 </body>
 </html>
