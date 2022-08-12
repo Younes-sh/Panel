@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- lins Responsive -->
+    <link rel="stylesheet" href="../responsive.css">
+    <!-- link css page 1 -->
+    <link rel="stylesheet" href="../style.css">
+    <!-- Chart 1 -->
+    <link rel="stylesheet" href="../canvas_1.css">
+    <!-- Chart 2 -->
+    <link rel="stylesheet" href="../chart_2.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <!-- profitize -->
+        <div class="profitize">
+            <div class="logo">LOGO</div>
+            <div class="sectionCustomer">
+                <a href=""><i></i>Overview</a>
+                <a href=""><i></i>Growth</a>
+                <a href=""><i></i>Customers</a>
+                <a href=""><i></i>Reports</a>
+            </div>
+            <div class="setingSupport">
+                <a href=""><i></i>Support</a>
+                <a href=""><i></i>Settings</a>
+            </div>
+            <div class="logOut">Log out</div>
+        </div>
+        <!-- OwerView -->
+        <div class="owerview">
+            <div class="owerview_section_1">
+                <h1>Overview</h1>
+                <h2>KPIs</h2>
+
+                <table>
+
+                    <tr class="border_bottem">
+                        <td>
+                            <span>Current MRR</span><h3>$855.4K</h3>
+                        </td>
+                        <td>
+                            <span>&nbsp;</span>
+                            <span>16%</span>
+                        </td>
+                    </tr>
+                    <tr class="border_bottem">
+                        <td>
+                            <span>Current Customers</span><h3>127,754</h3>
+
+                        </td>
+                        <td>
+                            <span>&nbsp;</span>
+                            <span>17%</span>
+                        </td>
+                    </tr>
+                    <tr class="border_bottem">
+                        <td>
+                            <span>Active Customers</span><h3>73.57%</h3>
+                        </td>
+                        <td>
+                            <span>&nbsp;</span>
+                            <span>21%</span>
+                        </td>
+                    </tr>
+
+                </table>
+            </div>
+            <div class="owerview_section_2">
+                <div id="chartContainer" style="height: 350px; width: 100%;"></div>
+                <button class="btn invisible" id="backButton"> Back</button>
+                <script src="https://canvasjs.com/assets/script/jquery-1.11.1.min.js"></script>
+                <script src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
+            </div>
+        </div>
+        <!-- Prancip -->
+        <div class="sectionPrancip">
+            <div class="section_search-profile">
+                <!-- Search Bell Profile -->
+                <div class="serch">
+                    <input type="text" id="search" placeholder="Search">
+                </div>
+                <div class="profile">
+                    <i>s</i>
+                    <div>img</div>
+                    <option value="">x</option>
+                </div>
+
+            </div>
+            <div>
+                <div class="Date_Title-yers">
+                    <h1>This Year Growth</h1>
+                    <input type="date">
+                </div>
+                                
+                <div id="chartContainer2" style="height: 370px; width: 100%;"></div>
+                    <script src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
+                    <div style="margin-top:16px;color:dimgrey;font-size:9px;font-family: Verdana, Arial, Helvetica, sans-serif;text-decoration:none;">Source: <a href="https://canvasjs.com/javascript-charts/multiple-axis-column-chart/" target="_blank" title="JavaScript Column Charts with Multiple Axes ">
+                        https://canvasjs.com/javascript-charts/multiple-axis-column-chart/</a>
+                </div>
+                
+            </div>
+            <div class="customer">
+                <div class="Recent-hour">
+                    <h1>Recent Activity</h1>
+                    <input type="">
+                </div>
+                <div class="table_customer">
+                    <table>
+                        <tr>
+                            <th>Customer</th>
+                            <th>Status</th>
+                            <th>Order number</th>
+                            <th>Retained</th>
+                            <th>Amount</th>
+                        </tr>
+                        <tr>
+                            <td>Jenny Wlison</td>
+                            <td>New Customer</td>
+                            <td>#0038160</td>
+                            <td>1 min ago</td>
+                            <td>$123.40</td>
+                        </tr>
+                        <tr>
+                            <td>Guy Hawkins</td>
+                            <td>Signed up</td>
+                            <td>#0038159</td>
+                            <td>5 min ago</td>
+                            <td>$79.99</td>
+                        </tr>
+                        <tr>
+                            <td>Ralph Edwards</td>
+                            <td>New Customer</td>
+                            <td>#0038158</td>
+                            <td>24 min ago</td>
+                            <td>$217.30</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+      
+
+    <!-- link script Graph -->
+    <script src="../chart_2.js"></script>
+    <script src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
+    <script src="../index.js"></script>
+</body>
+</html>
