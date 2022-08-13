@@ -111,10 +111,20 @@ body{
 .section_search-profile .profile {
     display: flex;
     justify-content: flex-end;
+    align-items: center;
 }
 .section_search-profile  input {
     width: 200px;
     height: 30px;
+}
+.section_search-profile .img {
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+}
+.section_search-profile .img img {
+    width: 100%;
+    border-radius: 50%;
 }
 
 .Date_Title-yers {
