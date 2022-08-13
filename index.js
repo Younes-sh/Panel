@@ -120,68 +120,37 @@ window.onload = function () {
 
 //          Chart 2
 
+
+
 var chart = new CanvasJS.Chart("chartContainer2", {
-    animationEnabled: true,
-   
-    axisY: {
-        title: "Billions of Barrels",
-        titleFontColor: "#4F81BC",
-        lineColor: "#4F81BC",
-        labelFontColor: "#4F81BC",
-        tickColor: "#4F81BC"
+	animationEnabled: true,
+	exportEnabled: true,
+	theme: "light1", // "light1", "light2", "dark1", "dark2"
+
+  	axisY: {
+      includeZero: true
     },
-    axisY2: {
-        title: "Millions of Barrels/day",
-        titleFontColor: "#C0504E",
-        lineColor: "#C0504E",
-        labelFontColor: "#C0504E",
-        tickColor: "#C0504E"
-    },	
-    toolTip: {
-        shared: true
-    },
-    legend: {
-        cursor:"pointer",
-        itemclick: toggleDataSeries
-    },
-    data: [{
-        type: "column",
-        name: "Proven Oil Reserves (bn)",
-        legendText: "Proven Oil Reserves",
-        showInLegend: true, 
-        dataPoints:[
-            { label: "q", y: 266.21 },
-            { label: "Venezuela", y: 302.25 },
-            { label: "Iran", y: 157.20 },
-            { label: "Iraq", y: 148.77 },
-            { label: "Kuwait", y: 101.50 },
-            { label: "UAE", y: 97.8 }
-        ]
-    },
-    {
-        type: "column",	
-        name: "Oil Production (million/day)",
-        legendText: "Oil Production",
-        axisYType: "secondary",
-        showInLegend: true,
-        dataPoints:[
-            { label: "Saudi", y: 10.46 },
-            { label: "Venezuela", y: 2.27 },
-            { label: "Iran", y: 3.99 },
-            { label: "Iraq", y: 4.45 },
-            { label: "Kuwait", y: 2.92 },
-            { label: "UAE", y: 3.1 }
-        ]
-    }]
+	data: [{
+		type: "column", //change type to bar, line, area, pie, etc
+		//indexLabel: "{y}", //Shows y value on all Data Points
+		indexLabelFontColor: "#5A5757",
+      	indexLabelFontSize: 16,
+		indexLabelPlacement: "outside",
+		dataPoints: [
+			{ x: 10, y: 71 },
+			{ x: 20, y: 55 },
+			{ x: 30, y: 50 },
+			{ x: 40, y: 65 },
+			{ x: 50, y: 92, indexLabel: "\u2605 Highest" },
+			{ x: 60, y: 68 },
+			{ x: 70, y: 38 },
+			{ x: 80, y: 71 },
+			{ x: 90, y: 54 },
+			{ x: 100, y: 60 },
+			{ x: 110, y: 36 },
+			{ x: 120, y: 49 },
+			{ x: 130, y: 21, indexLabel: "\u2691 Lowest" }
+		]
+	}]
 });
 chart.render();
-
-function toggleDataSeries(e) {
-    if (typeof(e.dataSeries.visible) === "undefined" || e.dataSeries.visible) {
-        e.dataSeries.visible = false;
-    }
-    else {
-        e.dataSeries.visible = true;
-    }
-    chart.render();
-}
