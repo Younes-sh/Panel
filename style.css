@@ -3,6 +3,10 @@
     padding: 0%;
     box-sizing: border-box;
 }
+html{
+    margin: 0;
+    padding: 0;
+}
 body{
     color: #fff;
     font-family: sans-serif;
@@ -15,6 +19,10 @@ body{
     display: flex;
 }
 /* Menu burger    hidden in max-width : 940px*/
+.container_menu {
+    width: 100%;
+    height: 70px;
+}
 .btn-burgerMenu {
     width: 200px;
     position: fixed;
@@ -22,8 +30,8 @@ body{
     border: none;
     font-size: 25px;
     padding-top: 20px;
-    z-index: 2;
     cursor: pointer;
+    z-index: 5;
 }
 .close::before {
     content: '\274C  Close';
@@ -31,7 +39,8 @@ body{
 }
 .open::before {
     content: '\2630  Open';
-    color: green;
+    color: #fff;
+    text-shadow: 0 0 2px black;
 }
 .menuBurger {
     width: 100%;
@@ -43,13 +52,12 @@ body{
     -webkit-backdrop-filter: blur( 8.5px );
     border-radius: 10px;
     border: 1px solid rgba( 255, 255, 255, 0.18 );
-    z-index: 1;
-    position: absolute;
+    position: fixed;
     display: flex;
     justify-content: center;
     align-items: center;
     text-align: left;
-
+    z-index: 1;
 }
 .hidden {
     visibility: hidden;
@@ -281,8 +289,24 @@ body{
         
     }
   
-    
 }
+@media screen and (max-width:458px) {
+    .Date_Title-yers h1 , .customer h1 {
+        font-size: 20px;
+    }
+    .sectionPrancip .search input {
+        width: 150px;
+    }
+    .profile .material-symbols-outlined {
+        display: none;
+    }
+    .customer table {
+        font-size: 10px;
+    }
+}
+
+
+
 
 /* Prevent the selection of elements in Body  */
 
