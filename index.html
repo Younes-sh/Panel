@@ -20,32 +20,35 @@
 </head>
 <body>
     <div class="container">
+        <button id="burgerMenu" class="burgerMenu close open">Open</button>
         <!-- profitize -->
         <div class="profitize">
-            <div class="logo">LOGO</div>
             <div class="sectionCustomer">
-                <a href=""><span class="material-symbols-outlined">
-                    view_timeline
-                    </span> Overview
-                </a>
-                <a href="">
-                    <span class="material-symbols-outlined">
-                        trending_up
-                    </span> Growth
-                </a>
-                <a href="">
-                    <span class="material-symbols-outlined">
-                    group
-                    </span> Customers
-                </a>
-                <a href="">
-                    <span class="material-symbols-outlined">
-                    insert_page_break
-                    </span> Reports
-                </a>
+                    <div class="logo">LOGO</div>
+               
+                    <a href=""><span class="material-symbols-outlined">
+                        view_timeline
+                        </span> Overview
+                    </a>
+                    <a href="">
+                        <span class="material-symbols-outlined">
+                            trending_up
+                        </span> Growth
+                    </a>
+                    <a href="">
+                        <span class="material-symbols-outlined">
+                        group
+                        </span> Customers
+                    </a>
+                    <a href="">
+                        <span class="material-symbols-outlined">
+                        insert_page_break
+                        </span> Reports
+                    </a>
+               
 
 
-                <div class="setingSupport">
+                
                     <a href="">
                         <span class="material-symbols-outlined">
                             support_agent
@@ -56,7 +59,7 @@
                             settings
                             </span> Settings
                     </a>
-                </div>
+                
             </div>
 
             <div class="logOut">
@@ -117,11 +120,18 @@
                     <input type="text" id="search" placeholder="Search">
                 </div>
                 <div class="profile">
-                    <i>s</i>
+                    <span class="material-symbols-outlined" >
+                        circle_notifications
+                    </span>
                     <div class="img">
-                        <img src="img-profile.jpg" alt="">
+                        <img src="img-profile.jpg" alt="profile">
                     </div>
-                    <option value="">x</option>
+                    <select id="cars" style="border: none; height: 25px;">
+                        <option value="younes">Younes</option>
+                        <option value="tirdad">Tirdad</option>
+                        <option value="sepandar">Sepandar</option>
+                        <option value="jamshid">Jamshid</option>
+                    </select>
                 </div>
 
             </div>
@@ -138,7 +148,12 @@
             <div class="customer">
                 <div class="Recent-hour">
                     <h1>Recent Activity</h1>
-                    <input type="">
+                    <select name="" id="change_date_customer" style="width: 100px; height: 30px; border:none">
+                        <option value="">24 h</option>
+                        <option value="">1 week</option>
+                        <option value="">1 mont</option>
+                        <option value="">1 year</option>
+                    </select>
                 </div>
                 <div class="table_customer">
                     <table>
@@ -150,7 +165,7 @@
                             <th>Amount</th>
                         </tr>
                         <tr>
-                            <td><img src="jennifer-lawrence.jpg" style="width: 25px; height: 25px; border-radius: 50%;" alt="jennifer lawrence">jennifer lawrence</td>
+                            <td><img src="jennifer-lawrence.jpg" style="width: 25px; height: 25px; border-radius: 50%;" alt="jennifer lawrence"> jennifer lawrence</td>
                             <td> <input disabled type="checkbox"> New Customer</td>
                             <td>#0038160</td>
                             <td>1 min ago</td>
