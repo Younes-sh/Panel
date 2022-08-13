@@ -16,10 +16,13 @@ body{
 }
 /* Menu burger    hidden in max-width : 940px*/
 .burgerMenu {
+    width: 200px;
+    position: fixed;
     background-color: transparent;
     border: none;
     font-size: 25px;
     padding-top: 20px;
+    z-index: 2;
 }
 .close::before{
     content: '\2630';
@@ -34,15 +37,18 @@ body{
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding-top: 50px;
     background-color: rgba(0, 0, 0, 0.904);
 }
 .profitize .sectionCustomer  {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    margin-top: 70px;
+    margin-top: 40px ;
     text-align: left;
+}
+.sectionCustomer .logo {
+    width: 100%;
+    height: 70px;
 }
 
 .profitize a {
@@ -194,6 +200,7 @@ body{
     }
     .logo {
         margin-left: 50px;
+        
     }
     .profitize .sectionCustomer {
         margin-top: -40px;
@@ -217,9 +224,10 @@ body{
         display: flex;
         flex-direction: row;
     }
-    .setingSupport {
-
+    .sectionCustomer {
+        padding-top: 80px;
     }
+   
 }
 @media screen and (max-width: 942px) {
     .profitize {
