@@ -23,6 +23,7 @@ body{
     font-size: 25px;
     padding-top: 20px;
     z-index: 2;
+    cursor: pointer;
 }
 .close::before {
     content: '\274C  Close';
@@ -50,6 +51,11 @@ body{
     text-align: left;
 
 }
+.hidden {
+    visibility: hidden;
+}
+
+
 .section-burger {
     width: 50%;
     height: 100%;
@@ -269,7 +275,7 @@ body{
     }
     
 }
-@media screen and (min-width: 940px) {
+@media screen and (min-width: 943px) {
     .btn-burgerMenu , .menuBurger {
         display: none;
         

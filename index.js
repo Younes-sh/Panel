@@ -1,3 +1,17 @@
+// event Btn menu-burger
+var btnBurger = document.querySelector('.btn-burgerMenu');
+
+var menuBurger = document.querySelector('.menuBurger');
+
+btnBurger.addEventListener('click' , menuBurgerHandler);
+function menuBurgerHandler(){
+    btnBurger.classList.toggle('open');
+    menuBurger.classList.toggle('hidden')
+}
+
+
+// Chart canvas 1 ----------------
+
 window.onload = function () {
 
     var totalVisitors = 883000;
@@ -118,7 +132,7 @@ window.onload = function () {
 
 
 
-//          Chart 2
+//          Chart canvas 2 --------------
 
 
 
