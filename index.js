@@ -10,11 +10,8 @@ function menuBurgerHandler(){
 }
 
 
-// event scroll Navbar 
-var navbar = document.querySelector('.container_menu');
-window.onscroll = function(event) {
-   navbar.classList.add('bgColor')
-};
+
+
 
 // Chart canvas 1 ----------------
 

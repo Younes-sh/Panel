@@ -8,8 +8,11 @@ html{
     padding: 0;
 }
 body{
+    width: 100%;
+    height: 100vh;
     color: #fff;
     font-family: sans-serif;
+    position: relative;
 }
 
 
@@ -18,30 +21,26 @@ body{
     height: 100vh;
     display: flex;
 }
-/* Menu burger    hidden in max-width : 940px*/
-.container_menu {
-    width: 100%;
-    height: 70px;
-    position: fixed;
-    z-index: 1;
-}
+/* Menu burger    hidden in max-width : 940px ---------*/
+
 .bgColor {
     background-color: rgba(0, 0, 0, 0.411);
     transition: 0.7s;
 }
 .btn-burgerMenu {
-    width: 200px;
-    position: fixed;
+    width: 100%;
     background-color: transparent;
     border: none;
     font-size: 25px;
     padding-top: 20px;
     cursor: pointer;
     z-index: 5;
+    position: fixed;
 }
 .close::before {
     content: '\274C  Close';
-    color: red;
+    color: #fff;
+    text-shadow: 0 0 2px rgba(0, 0, 0, 5);
 }
 .open::before {
     content: '\2630  Open';
@@ -49,7 +48,7 @@ body{
     text-shadow: 0 0 2px black;
 }
 .menuBurger {
-    width: 100%;
+    width: 300px;
     height: 100vh;
     background: rgba( 255, 255, 255, 0.6 );
     background: rgba( 255, 255, 255, 0.35 );
@@ -60,10 +59,8 @@ body{
     border: 1px solid rgba( 255, 255, 255, 0.18 );
     position: fixed;
     display: flex;
-    justify-content: center;
     align-items: center;
-    text-align: left;
-    z-index: 2;
+    z-index: 1;
 }
 .hidden {
     visibility: hidden;
@@ -83,7 +80,7 @@ body{
     text-decoration: none;
 }
 
-/* Profitize */
+/* Profitize -------------------------------*/
 .container .profitize {
     position: relative;
     width: 15%;
@@ -124,7 +121,7 @@ body{
     margin-right: 15px;
 }
 
-/* Overview */
+/* Overview ----------------------------------- */
 .container .owerview {
     width: 35%;
     height: 100%;
@@ -138,7 +135,6 @@ body{
 .owerview table  {
     width: 100%;
     height: 300px;
-    margin-top: 40px;
 }
 .owerview table tr {
     display: flex;
@@ -153,7 +149,10 @@ body{
     display: flex;
     flex-direction: column;
 }
-/* Section Prancip */
+.owerview_section_2 {
+    margin-bottom: 50px;
+}
+/* Section Prancip --------------------------------- */
 .container .sectionPrancip {
     width: 60%;
     height: 100%;
@@ -284,13 +283,17 @@ body{
    
 }
 @media screen and (max-width: 942px) {
-    .profitize {
-        visibility: hidden;
+    .container {
+        padding-top: 20px;
+    }
+    .container .profitize , .sectionCustomer{
+        display: none;
+        background-color: #fff;
     }
     
 }
 @media screen and (min-width: 943px) {
-    .btn-burgerMenu , .menuBurger , .container_menu{
+    .btn-burgerMenu {
         display: none;
         
     }
@@ -310,14 +313,18 @@ body{
         font-size: 10px;
     }
 }
-
+@media screen and (max-width:428px) {
+    .container {
+        padding-top: 60px;
+    }
+}
 
 
 
 /* Prevent the selection of elements in Body  */
 
-.prevent-select {
+ .prevent-select {
     -webkit-user-select: none; /* Safari */
     -ms-user-select: none; /* IE 10 and IE 11 */
     user-select: none; /* Standard syntax */
-}
+} 
