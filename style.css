@@ -22,6 +22,12 @@ body{
 .container_menu {
     width: 100%;
     height: 70px;
+    position: fixed;
+    z-index: 1;
+}
+.bgColor {
+    background-color: rgba(0, 0, 0, 0.411);
+    transition: 0.7s;
 }
 .btn-burgerMenu {
     width: 200px;
@@ -57,7 +63,7 @@ body{
     justify-content: center;
     align-items: center;
     text-align: left;
-    z-index: 1;
+    z-index: 2;
 }
 .hidden {
     visibility: hidden;
@@ -284,7 +290,7 @@ body{
     
 }
 @media screen and (min-width: 943px) {
-    .btn-burgerMenu , .menuBurger {
+    .btn-burgerMenu , .menuBurger , .container_menu{
         display: none;
         
     }
