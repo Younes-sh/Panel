@@ -5,7 +5,7 @@
 
 ### Technologies used in this project :
 
-#### Html , Css , Javascript
+#### Html , Css , Javascript ,  IDE & terminal: your tools of trade
 
 ## Advantages of using the website panel :
 
@@ -13,4 +13,6 @@
 - To interact with website users
 - Ability to check multiple sites in one panel 
 
+
+![](image-Site photo.png)
  
