@@ -282,6 +282,11 @@ body{
     }
    
 }
+@media screen and (max-width: 1024px) {
+    .overview {
+        padding-top: 70px;
+    }
+}
 @media screen and (max-width: 942px) {
     .container {
         padding-top: 20px;
@@ -313,12 +318,39 @@ body{
         font-size: 10px;
     }
 }
+@media screen and (max-width:540px) {
+    .container {
+        padding-top: 60px;
+    }
+    .owerview {
+        margin-top: 160px;
+    }
+}
 @media screen and (max-width:428px) {
     .container {
         padding-top: 60px;
     }
 }
+@media screen and (max-width:375px) {
+    .owerview {
+        margin-top: 170px;
+    }
+}
+@media screen and (max-width:361px) {
+    .owerview {
+        margin-top: 200px;
+    }
+}
 
+@media screen and (max-width:280px) {
+    .owerview {
+        margin-top: 220px;
+    }
+    .profile img {
+        display: none;
+    }
+
+}
 
 
 /* Prevent the selection of elements in Body  */
